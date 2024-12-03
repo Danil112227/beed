@@ -1,0 +1,18 @@
+django:
+  debug: true
+  secret_key: django_secret
+  site_url:
+
+auth:
+  HMAC_JWT_KEY: key
+
+database:
+  name: beed
+  user: beed
+  password: password
+  host: postgresql
+  port: 5432
+
+sentry:
+  dsn:
+  env:

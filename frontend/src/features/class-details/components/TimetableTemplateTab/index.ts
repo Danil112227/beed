@@ -1,0 +1,1 @@
+export { TimetableTemplateTab } from "./TimetableTemplateTab";

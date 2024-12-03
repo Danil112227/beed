@@ -1,0 +1,204 @@
+.timetable-template {
+	.rbc-current-time-indicator {
+		background-color: transparent !important;
+	}
+
+	.rbc-today {
+		background-color: transparent !important;
+	}
+}
+
+.rbc-allday-cell {
+	display: none;
+}
+
+.rbc-time-view .rbc-header {
+	border-bottom: none !important;
+}
+
+.rbc-time-view {
+	border-color: #CBD3DF !important;
+	border-radius: 0.8rem 0.8rem 0 0 !important;
+	border-bottom: none !important;
+}
+
+.rbc-time-content {
+	border-width: 1px !important;
+}
+
+.rbc-timeslot-group {
+	min-height: 16rem !important;
+}
+
+.rbc-time-column {
+	&:first-child {
+		.rbc-timeslot-group {
+			border-color: transparent !important;
+
+			&:last-child {
+				border-color: #CBD3DF !important;
+			}
+		}
+
+		.rbc-label {
+			font-size: 1.6rem !important;
+			color: #9C9DB8 !important;
+		}
+	}
+}
+
+.rbc-time-column {
+	&:nth-last-child(-n + 2) {
+		background-color: #ffeded !important;
+	}
+}
+
+.rbc-event-label {
+	display: none !important;
+
+}
+
+.rbc-event,
+.rbc-background-event {
+	padding: 0px !important;
+	border: none !important;
+	border-radius: 8px !important;
+	padding: 14px 12px;
+	margin: 0 10px;
+}
+
+.rbc-day-slot .rbc-time-slot {
+	border-top: none !important;
+}
+
+.rbc-events-container {
+	margin-right: 0.8rem !important;
+}
+
+.rbc-time-header {
+	min-height: 4rem;
+}
+
+.rbc-label {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.rbc-timeslot-group,
+.rbc-events-container,
+.rbc-time-content,
+.rbc-header,
+.rbc-time-header-content {
+	border-color: #CBD3DF !important;
+}
+
+.rbc-row {
+	height: 100%;
+}
+
+.rbc-header {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 0 !important;
+}
+
+.rbc-button-link {
+	font-weight: 400;
+	font-size: 1.6rem;
+}
+
+
+
+.timetable-head {
+	display: flex;
+	align-items: center;
+	margin-bottom: 1.8rem;
+	width: 100%;
+
+	&__date {
+		font-size: 2.4rem;
+		font-weight: 600;
+		margin-right: 1.2rem;
+	}
+
+	&__date-picker {
+		width: 30rem;
+		margin-left: auto;
+		margin-right: 1.8rem;
+
+		&:last-child {
+			margin-right: 0;
+		}
+	}
+
+	.input {
+		min-height: 4rem;
+	}
+
+	.p-inputtext {
+		padding: 0.4rem 1.6rem !important;
+	}
+}
+
+.rbc-event {
+	border-radius: 0 !important;
+	background-color: transparent !important;
+	overflow: visible !important;
+	position: relative;
+	min-height: 7rem !important;
+
+	&::before {
+		position: absolute;
+		width: calc(100% - 2px);
+		height: calc(100% - 2px);
+		content: "";
+		top: 50%;
+		transform: translateY(-50%);
+		left: -0.3rem;
+		border-radius: 0.8rem 0 0 0.8rem;
+		background-color: var(--black);
+		pointer-events: none;
+	}
+}
+
+.ck-powered-by-balloon {
+	opacity: 0 !important;
+}
+
+
+.lesson {
+	width: 100%;
+	height: 100%;
+
+	a,
+	button {
+		width: 100%;
+		background-color: #e4efff;
+		border-radius: 0.8rem;
+		padding: 1.2rem;
+		height: 100%;
+		position: relative;
+		height: 100%;
+		overflow: hidden;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+	}
+
+	&__name {
+		color: var(--text-1);
+		font-size: 1.8rem;
+		font-weight: 600;
+		display: block;
+		text-align: left;
+		margin-bottom: 0.4rem;
+	}
+
+	&__teacher {
+		display: block;
+		font-size: 1.4rem;
+		color: var(--text-1);
+	}
+}

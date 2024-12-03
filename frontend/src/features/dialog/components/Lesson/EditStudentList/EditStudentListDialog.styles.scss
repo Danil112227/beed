@@ -1,0 +1,113 @@
+.main-form {
+  &__list-count {
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: #9C9DB8;
+    margin-bottom: 1.8rem;
+    margin-top: 2.4rem;
+  }
+
+  &__user-list {
+    .user {
+      margin-bottom: 1.8rem;
+
+      &__checkbox {
+        width: 2.4rem;
+        height: 2.4rem;
+        margin-right: 2.4rem;
+        position: relative;
+        cursor: pointer;
+      }
+
+      &__checkbox-input {
+        position: absolute;
+        font-size: 0;
+        width: 0;
+        height: 0;
+        opacity: 0;
+        z-index: -1;
+      }
+
+      &__checkbox-label {
+        flex: none;
+        width: 2.4rem;
+        height: 2.4rem;
+        border: 1px solid #EAEDF2;
+        border-radius: 0.8rem;
+        box-shadow: 1px 3px 4px 0px rgba(54, 67, 100, 0.1);
+        position: relative;
+
+        &:after {
+          opacity: 0;
+          content: '';
+          position: absolute;
+          width: 10px;
+          height: 6px;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          background-size: contain;
+          background-repeat: no-repeat;
+          background-image: url("data:image/svg+xml,%3Csvg width='10' height='6' viewBox='0 0 10 6' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M9 1L5 5L1 1' stroke='white' stroke-width='1.8' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E%0A");
+        }
+      }
+    }
+  }
+}
+
+.user__checkbox-input:checked+.user__checkbox-label {
+  background-color: var(--primary);
+  border-color: var(--primary);
+
+  &:after {
+    opacity: 1;
+  }
+}
+
+.popup {
+
+  &__head-row {
+    display: flex;
+    align-items: center;
+  }
+
+  &__head-back {
+    width: 4.8rem;
+    height: 4.8rem;
+    display: block;
+    margin-right: 2.4rem;
+  }
+
+  &__leson-head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__leson-name {
+    font-size: 2.4rem;
+    font-weight: 600;
+  }
+
+  &__leson-name-sub {
+    font-size: 1.8rem;
+    font-weight: 400;
+    color: #9C9DB8;
+  }
+
+  &__deadline {
+    display: flex;
+    align-items: center;
+  }
+
+  &__deadline-row {
+    display: flex;
+    align-items: center;
+  }
+
+  &__deadline-title {
+    font-size: 1.4rem;
+    margin-right: 2.4rem;
+    font-weight: 600;
+  }
+}

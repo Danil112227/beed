@@ -1,0 +1,1 @@
+export { DeleteHomeworkDialog } from "./DeleteHomeworkDialog";

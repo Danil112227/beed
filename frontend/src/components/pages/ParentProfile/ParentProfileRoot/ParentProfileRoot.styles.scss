@@ -1,0 +1,139 @@
+.children-row {
+  display: flex;
+  flex-wrap: wrap;
+  margin: -0.9rem;
+}
+
+.children-col {
+  width: calc(100% / 3);
+  padding: 0.9rem;
+}
+
+.children {
+  padding: 1.4rem 2.4rem;
+  border-radius: 0.8rem;
+  border: 1px solid var(--border);
+  box-shadow: 2px 6px 10px 0px rgba(243, 245, 255, 0.4);
+
+  &__name {
+    font-size: 1.6rem;
+    font-weight: 600;
+    display: block;
+    margin-bottom: 0.8rem;
+  }
+}
+
+.info-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 2.4rem;
+
+  &__count {
+    font-size: 2.4rem;
+    font-weight: 600;
+  }
+}
+
+.section-title {
+  display: block;
+  font-size: 1.8rem;
+  font-weight: 600;
+}
+
+.discipline-row {
+  display: flex;
+  flex-wrap: wrap;
+  margin: -0.9rem;
+}
+
+.discipline-col {
+  width: auto;
+  min-width: calc(100% / 5);
+  padding: 0.9rem;
+}
+
+.leadership-row {
+  display: flex;
+  flex-wrap: wrap;
+  margin: -0.9rem;
+}
+
+.leadership-col {
+  width: auto;
+  padding: 0.9rem;
+}
+
+.discipline {
+  padding: 1.4rem 2.4rem;
+  border-radius: 0.8rem;
+  border: 1px solid var(--border);
+  box-shadow: 2px 6px 10px 0px rgba(243, 245, 255, 0.4);
+
+  &__head {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 0.8rem;
+  }
+
+  &__name {
+    font-weight: 600;
+    font-size: 1.6rem;
+    margin-right: 0.8rem;
+  }
+
+  &__close {
+    display: flex;
+  }
+
+  &__owner {
+    color: var(--text-2);
+    font-size: 1.6rem;
+  }
+}
+
+.tag {
+  height: 2.8rem;
+  padding: 2px 1.4rem;
+  border-radius: 0.6rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--text-1);
+  margin-left: auto;
+
+  &.type-student {
+    background-color: #E9EBFE;
+  }
+
+  &.type-tutor {
+    background-color: #FFE6E6;
+  }
+
+  &.type-teacher {
+    background-color: #E3FCFF;
+  }
+
+  &.type-parent {
+    background-color: #F6EDE5;
+  }
+
+  &.type-school {
+    background-color: #FFE9C4;
+  }
+
+  &.type-class {
+    background-color: #E1F2B3;
+  }
+}
+
+.tag-row {
+  display: flex;
+  flex-wrap: wrap;
+  margin: -0.4rem;
+}
+
+.tag-col {
+  width: auto;
+  padding: 0.4rem;
+}

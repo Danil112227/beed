@@ -1,0 +1,59 @@
+// Colors
+
+$black: #000000;
+$white: #FFFFFF;
+
+
+$primary: #2032B0;
+$secondary: #E4EFFF;
+$gray-1: #CBD3DF;
+$gray-2: #F2F4F9;
+$additional-1: #FFECEC;
+$additional-2: #E9FFEF;
+$additional-3: #EDF2FF;
+
+
+$text-1: #1A1B23;
+$text-2: #9C9DB8;
+
+$success: #4AC99B;
+$error-1: #D60814;
+$error-2: #EB152E;
+$warning: #FFC700;
+$input: #DBE2EC;
+$border: #EAEDF2;
+
+// $example: #333333;
+
+
+//fonts
+
+$base-font: "Giga Sans";
+$inter-font: "Inter";
+
+:root {
+	//colors
+	--black: #{$black};
+	--white: #{$white};
+	--primary: #{$primary};
+	--secondary: #{$secondary};
+	--gray-1: #{$gray-1};
+	--gray-2: #{$gray-2};
+	--additional-1: #{$additional-1};
+	--additional-2: #{$additional-2};
+	--additional-3: #{$additional-3};
+	--text-1: #{$text-1};
+	--text-2: #{$text-2};
+	--success: #{$success};
+	--error-1: #{$error-1};
+	--error-2: #{$error-2};
+	--warning: #{$warning};
+	--input: #{$input};
+	--border: #{$border};
+
+	// --example: #{$example};
+
+	//fonts
+	--base-font: #{$base-font};
+	--inter-font: #{$inter-font};
+}

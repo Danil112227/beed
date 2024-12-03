@@ -1,0 +1,1 @@
+export { SchoolList } from "./SchoolList";

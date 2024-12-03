@@ -1,0 +1,36 @@
+.selected-row {
+  display: flex;
+  flex-wrap: wrap;
+  margin: -2px;
+}
+
+.selected-col {
+  padding: 2px;
+}
+
+.selected-item {
+  background-color: var(--gray-2);
+  border-radius: 0.4rem;
+  padding: 0.4rem 0.8rem 0.4rem 1.2rem;
+  min-height: 3.2rem;
+  display: flex;
+  align-items: center;
+
+  &__name {
+    font-size: 1.4rem;
+    color: var(--text-1);
+    margin-right: 0.4rem;
+    line-height: 1.2;
+  }
+
+  &__del {
+    width: 1.6rem;
+    height: 1.6rem;
+    display: flex;
+
+    svg {
+      width: 1.6rem;
+      height: 1.6rem;
+    }
+  }
+}

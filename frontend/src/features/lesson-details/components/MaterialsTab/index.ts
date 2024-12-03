@@ -1,0 +1,1 @@
+export { MaterialsTab } from "./MaterialsTab";

@@ -1,0 +1,1 @@
+export { AddSchoolRoot } from "./AddSchoolRoot";

@@ -1,0 +1,67 @@
+version: '3.4'
+
+networks:
+  default:
+    driver: bridge
+    driver_opts:
+      com.docker.network.driver.mtu: 1400
+
+services:
+  backend:
+    build:
+      context: .
+      target: backend-base
+    ports:
+      - "8001:8000"
+    volumes:
+      - ./backend:/opt/beed
+      - .dev/config.yaml:/etc/beed/config.yaml
+    command: [
+      "sh", "-c", "python manage.py migrate && gunicorn application.wsgi:application -b 0.0.0.0:8000 --reload --workers 3"
+    ]
+    depends_on:
+      - postgresql
+
+  frontend:
+    build:
+      context: .
+      target: frontend-builder
+    volumes:
+      - ./frontend/src:/app/src
+    ports:
+      - "3000:3000"
+    environment:
+      - CHOKIDAR_USEPOLLING=true
+    command: [
+      "sh", "-c", "npm install && npm run dev"
+    ]
+
+  nginx:
+    build:
+      context: .
+      target: frontend-nginx
+    volumes:
+      - .dev/nginx.conf:/etc/nginx/conf.d/default.conf
+    ports:
+      - "9000:80"
+    depends_on:
+      - backend
+      - frontend
+
+
+  postgresql:
+    image: postgres:14.4
+    environment:
+      POSTGRES_DB: beed
+      POSTGRES_USER: beed
+      POSTGRES_PASSWORD: password
+      PGDATA: /var/lib/postgresql/data/pgdata
+    volumes:
+      - postgresql-data:/var/lib/postgresql/data
+    ports:
+      - "5432:5432"
+
+volumes:
+  postgresql-data:
+    driver: local
+    name: beed-postgresql-data

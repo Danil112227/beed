@@ -1,0 +1,50 @@
+//header
+.header {
+	height: 8.5rem;
+	background-color: white;
+	position: relative;
+	z-index: 1102;
+	padding: 2.4rem 0;
+
+	&__row {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+	}
+}
+
+.nav {
+	&__list {
+		display: flex;
+		align-items: center;
+		margin: -2.4rem;
+	}
+
+	&__item {
+		padding: 2.4rem;
+	}
+
+	&__btn {
+		font-size: 1.6rem;
+		font-weight: 600;
+		color: var(--text-1);
+		border-bottom: 2px solid transparent;
+		transition: all 0.3s ease;
+
+		&:hover {
+			border-color: var(--text-1);
+			;
+		}
+	}
+}
+
+.logo {
+	width: auto;
+	height: 4.2rem;
+
+
+	svg {
+		width: auto;
+		height: 100%;
+	}
+}

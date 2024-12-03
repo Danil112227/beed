@@ -1,0 +1,30 @@
+stages:
+  - deploy
+
+before_script:
+  - mkdir -p ~/.ssh
+  - echo -e "Host *\n\tStrictHostKeyChecking no\n\n" > ~/.ssh/config
+  - eval $(ssh-agent -s)
+  - echo "$SSH_PRIVATE_KEY" > ~/.ssh/runner
+  - chmod 600 ~/.ssh/runner
+  - ssh-add ~/.ssh/runner
+
+deploy_production:
+  stage: deploy
+  script:
+    - ssh root@31.129.48.96 'bash -s' << 'EOF'
+    - set -e
+    - cd /opt/beed/
+    - eval $(ssh-agent -s)
+    - ssh-add ~/.ssh/ssh_key
+    - git fetch --all
+    - git reset --hard origin/dev
+    - docker-compose down
+    - docker-compose build
+    - docker-compose up -d
+    - EOF
+  when: manual
+  environment:
+    name: production
+  only:
+    - dev

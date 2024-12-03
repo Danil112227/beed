@@ -1,0 +1,1 @@
+export { DeleteDisciplineDialog } from "./DeleteDisciplineDialog";

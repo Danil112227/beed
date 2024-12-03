@@ -1,0 +1,81 @@
+@font-face {
+    font-family: 'Giga Sans Extra';
+    src: url('GigaSans-ExtraLight.woff2') format('woff2'),
+        url('GigaSans-ExtraLight.woff') format('woff');
+    font-weight: 200;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Giga Sans';
+    src: url('GigaSans-Medium.woff2') format('woff2'),
+        url('GigaSans-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Giga Sans';
+    src: url('GigaSans-Bold.woff2') format('woff2'),
+        url('GigaSans-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Giga Sans';
+    src: url('GigaSans-Light.woff2') format('woff2'),
+        url('GigaSans-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Giga Sans Extra';
+    src: url('GigaSans-ExtraBold.woff2') format('woff2'),
+        url('GigaSans-ExtraBold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Giga Sans Semi';
+    src: url('GigaSans-SemiBold.woff2') format('woff2'),
+        url('GigaSans-SemiBold.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Giga Sans';
+    src: url('GigaSans-Regular.woff2') format('woff2'),
+        url('GigaSans-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Giga Sans';
+    src: url('GigaSans-Thin.woff2') format('woff2'),
+        url('GigaSans-Thin.woff') format('woff');
+    font-weight: 100;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Giga Sans';
+    src: url('GigaSans-Black.woff2') format('woff2'),
+        url('GigaSans-Black.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+

@@ -1,0 +1,22 @@
+# IDE
+.idea
+.DS_Store
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+.dev/config.yaml
+
+# Environments
+.env
+.venv
+env/
+venv/
+
+# Frontend
+yarn-error.log
+frontend/.pnp.*
+frontend/node_modules
+frontend/.yarn/*
+!frontend/.yarn/releases

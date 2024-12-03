@@ -1,0 +1,1 @@
+export { SomeFirstComponent } from "./SomeFirstComponent";

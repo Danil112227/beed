@@ -1,0 +1,1 @@
+export { SchoolSearchItem } from "./SchoolSearchItem";

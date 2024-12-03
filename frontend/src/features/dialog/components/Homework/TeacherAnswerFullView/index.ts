@@ -1,0 +1,1 @@
+export { TeacherAnswerFullView } from "./TeacherAnswerFullView";

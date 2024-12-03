@@ -1,0 +1,1 @@
+export { StudentTimetableRoot } from "./StudentTimetableRoot";

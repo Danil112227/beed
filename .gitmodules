@@ -1,0 +1,3 @@
+[submodule "rpmtools"]
+	path = rpmtools
+	url = ../../rpmtools.git

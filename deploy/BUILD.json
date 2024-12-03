@@ -1,0 +1,21 @@
+{
+    "autorestart": false,
+    "systemd": true,
+    "name": "beed",
+    "package_name": "beed",
+    "python": "python3.11",
+    "pythonpath": "/opt/beed/env/lib/python3.11/site-packages",
+	"leave_py_lib64": true,
+	"celery_logfile": true,
+    "extra_robots": true,
+    "summary": "beed",
+    "celery": true,
+    "build_requires": "python3.11-devel rpm-build rsync redhat-rpm-config postgresql14-libs libjpeg-devel",
+    "version": "0.0.1",
+    "celerybeat": true,
+    "migrate_command": null,
+    "gitlab_project_id": 21816,
+    "autoreq": 0,
+    "requires": "python3.11 rsync libpq libjpeg syslog",
+    "nginx": false
+}

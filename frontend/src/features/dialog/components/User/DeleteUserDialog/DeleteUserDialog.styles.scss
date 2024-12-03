@@ -1,0 +1,275 @@
+.p-component {
+  font-family: "Giga Sans" !important;
+  font-size: unset;
+  // margin-top: 8.5rem;
+}
+
+.p-dialog-mask {
+  background-color: rgba(14, 1, 26, 0.2) !important;
+}
+
+.popup {
+  width: 56rem;
+  padding: 4.8rem;
+  border-radius: 0.8rem;
+  box-shadow: none;
+  background: var(--white);
+
+  .btn {
+    min-height: 6rem !important;
+  }
+
+  &--nohead {
+    margin: -8.5rem 0 0 0;
+  }
+
+  &--leson {
+    width: 58rem;
+  }
+
+  &--mid {
+    width: 79.2rem;
+  }
+
+  &--max {
+    width: 103.2rem;
+  }
+
+  &__leson-del {
+    margin-right: auto;
+    margin-left: 0;
+  }
+
+  &__leson-end {
+    color: #9C9DB8;
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-top: 1.2rem;
+  }
+
+  &__leson-day {
+    color: #9C9DB8;
+    font-size: 2.2rem;
+  }
+
+  &__scroll {
+    max-height: calc(100vh - 45rem);
+    overflow: hidden;
+    overflow-y: auto;
+    margin-right: -2.4rem;
+    padding-right: 2.4rem;
+
+    &::-webkit-scrollbar {
+      width: 10px;
+      background-color: var(--gray-2);
+      border-radius: 4px;
+    }
+
+    &::-webkit-scrollbar-thumb {
+      width: 5px;
+      background-color: var(--gray-1);
+      border-radius: 0.6rem;
+      border: 2px solid var(--gray-2);
+    }
+  }
+
+  .main-form__field {
+    padding: 0.4rem 0;
+  }
+
+  &__title {
+    font-size: 2.2rem;
+    color: var(--text-1);
+    font-weight: 600;
+    margin-bottom: 1.2rem;
+    text-align: center;
+  }
+
+  &__title-type {
+    font-size: 2.2rem;
+    color: var(--text-2);
+    font-weight: 400;
+  }
+
+  &__close {
+    display: flex;
+    margin-left: auto;
+    margin-bottom: 2rem;
+  }
+
+  &__icon {
+    margin-bottom: 1.2rem;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 5.2rem;
+  }
+
+  &__body {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__desc {
+    font-size: 1.6rem;
+    text-align: center;
+    color: var(--text-2);
+  }
+
+  &__footer {
+    // display: flex;
+    margin-top: 4rem;
+
+    &--short {
+      .popup__footer-row {
+        justify-content: flex-end;
+      }
+
+      .popup__footer-col {
+        width: max-content;
+      }
+    }
+  }
+
+  &__material-row {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -0.9rem;
+  }
+
+  &__material-col {
+    padding: 0.9rem;
+    width: calc(100% / 3);
+
+    .material__item {
+      border-radius: 0.8rem;
+      border: 1px solid var(--border);
+      padding: 0.8rem;
+    }
+
+    .material__item-name {
+      font-weight: 600;
+    }
+  }
+
+  &__footer-row {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -0.7rem;
+  }
+
+  &__material-date {
+    width: 100%;
+    color: var(--text-2);
+    font-size: 1.4rem;
+  }
+
+  &__view-title {
+    display: block;
+    font-size: 2.4rem;
+    font-weight: 600;
+    background: #0B0D40;
+    background: linear-gradient(0deg, #0B0D40 0%, #1C2F6F 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 2.4rem;
+  }
+
+  &__material-desc {
+    width: 100%;
+    font-size: 2rem;
+  }
+
+  &__col {
+    margin-bottom: 4rem;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  &__material-added-by {
+    display: block;
+    width: 100%;
+    font-size: 1.8rem;
+    color: var(--text-2);
+    margin-top: 2.4rem;
+  }
+
+  &__material-added-name {
+    color: var(--primary);
+  }
+
+  &__footer-col {
+    width: 50%;
+    padding: 0.7rem;
+  }
+
+  &__answer {
+    font-size: 1.6rem;
+    color: var(--text-1);
+    font-weight: 600;
+    display: block;
+    margin-bottom: 1.6rem;
+  }
+
+  &__answer-desc {
+    font-size: 1.8rem;
+    color: var(--text-1);
+    margin-bottom: 1.6rem;
+  }
+
+  &__body {
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  &__head {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 4rem;
+  }
+
+  &__title {
+    margin-bottom: 0;
+  }
+}
+
+.popup-btn {
+  height: 6rem;
+  width: 100%;
+  padding: 1.8rem 2.8rem;
+  line-height: 1;
+  font-size: 1.8rem;
+  font-weight: 600;
+  border-radius: 0.8rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  &.primary {
+    background-color: var(--error-1);
+    color: var(--white);
+  }
+
+  &.secondary {
+    color: var(--text-1);
+    background-color: var(--gray-2);
+  }
+
+  &.tertiary {
+    border: 1px solid var(--error-1);
+    color: var(--error-1);
+
+    svg {
+      fill: var(--error-1);
+    }
+  }
+
+  svg {
+    margin-left: 0.8rem;
+  }
+}

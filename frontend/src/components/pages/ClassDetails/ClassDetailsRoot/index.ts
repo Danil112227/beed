@@ -1,0 +1,1 @@
+export { ClassDetailsRoot } from "./ClassDetailsRoot";

@@ -1,0 +1,2 @@
+export const PER_PAGE_ITEMS_COUNT = 8;
+export const PAGINATION_BUTTONS_COUNT = 5;

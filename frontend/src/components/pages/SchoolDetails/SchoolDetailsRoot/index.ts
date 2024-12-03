@@ -1,0 +1,1 @@
+export { SchoolDetailsRoot } from "./SchoolDetailsRoot";

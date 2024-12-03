@@ -1,0 +1,1 @@
+export { EditSchoolRoot } from "./EditSchoolRoot";

@@ -1,0 +1,7 @@
+{
+	"css.lint.unknownAtRules": "ignore",
+	"editor.detectIndentation": false,
+	"editor.insertSpaces": false,
+	"editor.tabSize": 4,
+	"editor.defaultFormatter": "esbenp.prettier-vscode"
+}

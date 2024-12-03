@@ -1,0 +1,1 @@
+export { LeadershipItem } from "./LeadershipItem";

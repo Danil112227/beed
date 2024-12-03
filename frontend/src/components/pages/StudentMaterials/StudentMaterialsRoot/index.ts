@@ -1,0 +1,1 @@
+export { StudentMaterialsRoot } from "./StudentMaterialsRoot";

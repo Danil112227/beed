@@ -1,0 +1,1 @@
+export { DeleteClassDialog } from "./DeleteClassDialog";
